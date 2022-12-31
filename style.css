@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+:root{
+    --bg-color:#F3E5F5;
+    --border-color:#E1BEE7;
+    --box-shadow-box:  0 0 20px rgba(0,0,0,.1);
+    --white-color:#fff;
+    --black-color:#000000;
+    --text-color:#333;
+}
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+html{
+    font-size: 62.2%;
+    overflow-x: hidden;
+    overflow-y:auto ;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    background-color: var(--bg-color);
+}
+section{
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    width: 1100px;
+    height: auto;
+    border: 1px solid var(--border-color) ;
+    box-shadow: var(--box-shadow-box);
+    background-color: #FCE4EC;
+    border-radius: 8px;
+    padding: 0 30px;
+    position: relative;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mascotte{
+    position: absolute;
+    top: -4px;
+    left: 0;
+    display: inline;
+    transform:rotate(30deg) ;
+}
+.mascotte img{
+    width: 20rem;
+}
+.title{
+    width: 100%;
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 4px solid #880E4F;
+    
+}
+.title h1{
+    font-size: 30px;
+    color: #880E4F;
+}
+.form_container{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.form_content{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left span{
+   padding: 0 30px;
+}
+.right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.form_box .box{
+    background-color: var(--white-color);
+    margin: 1rem 0;
+    height: 3.5rem;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+.form_box .box:focus{
+    background-color: #F3E5F5;
+    filter: drop-shadow(5px 2px 10px #d3a6da) ;
+    border: none;
+    
+}
+.key_word{
+    font-size: 2rem;
+    color:#212121;
+    font-family:  cursive;
+    font-weight: bold;
+}
+.color{
+    color:#880E4F ;
+    font-style: italic;
+}
+.color:hover{
+    color:#212121;
+}
+p{
+    padding: 20px 0 ;
+    font-size: 2rem;
+    color:#212121;
+    font-family: cursive;
+}
+.footer{
+    padding: 15px 0;
+    font-size: 2rem;
+    color:#212121;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+@media(max-width:791px){
+    .title h1{
+        font-size: 25px;
+    }
+    .title{
+        width: 100%;
+        padding: 25px 0;
+        
+    }
+}
+@media(max-width:731px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form_container{
+        padding: 30px 0;
+    }
+    .form_content{
+        padding: 20px 0;
+    }
+    p{
+        padding: 20px 0;
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    p{
+        padding: 16px 0 ;
+        font-size: 1.8rem;
+
+    }
+    .left span{
+        padding: 0;
+     }
+}
+
+
+@media(max-width:383px){
+    .title h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+   p{
+    font-size: 1.6rem;
+   }
+}
+@media(max-width:337px){
+    .footer{
+        font-size: 1.5rem;
+    }
+    .key_word{
+        font-size: 1.4rem;
+    }
+}
+
+

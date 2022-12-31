@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur | décimal, hexadécimal, binaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="focu()">
+    <div class="mascotte">
+        <img src="fox.png" alt="">
+    </div>
+    <section id="home">
+        <div class="container">
+            <div class="title">
+                <h1>Convertisseur décimal, hexadécimal, binaire</h1>
+            </div>
+            <div class="form_container" >
+                <div class="form_content">
+                    <div class="form_box">
+                        <form name="form_id">
+                            <div class="box_container">
+                                <div class="grid">
+                                    <div class="left">
+                                        <span class="key_word">Décimal (base 10)</span>
+                                    </div>                                   
+                                    <div class="left">
+                                        <input type="number" name="decimal" placeholder="Ex: 3674" id="focus" class="box decimal" oninput="print_input_value(this.value,String(this.value).length,10,2),print_input_value(this.value,String(document.getElementById('focus').value).length,10,16)">
+                                    </div>                                                                      
+                                </div>
+                                <div class="grid">
+                                    <div class="left">
+                                        <span class="key_word">Hexadécimal (base 16)</span>
+                                    </div>                                  
+                                    <div class="left">
+                                        <input type="text" name="hexa" id="hexa" class="box" placeholder=" Ex : 6E3" oninput="print_input_value(this.value,String(this.value).length,16,10),print_input_value(this.value,String(this.value).length,16,2)">
+                                    </div>                                                                   
+                                </div>
+                                <div class="grid">
+                                    <div class="left">
+                                        <span class="key_word">Binaire (base 2)</span>
+                                    </div>                                  
+                                    <div class="left">
+                                        <input type="number" name="binaire" id="bin" placeholder="Ex : 11011100011" class="box" oninput="print_input_value(this.value,String(this.value).length,2,10),print_input_value(this.value,String(this.value).length,2,16)">
+                                    </div>                                                          
+                                </div> 
+                            </div>                                                                                  
+                        </form>
+                        <div class="text_container">
+                            <div class="title">
+                                <h1>Note</h1>
+                            </div>
+                            <div class="note">
+                                <p>Le code JavaScript de ce convertisseur a été mis au point le 24/07/2022. Pour en savoir plus sur moi retrouvez mon portfolio <a href="https://www.ayyub.fr/" class="color" target="_blank">ici.</a> </p>
+                            </div>                           
+                        </div>   
+                    </div> 
+                </div>
+                <div class="footer"> Créer Par <a href="https://www.ayyub.fr/" class="color" target="_blank">Doumbia Ayouba</a>  | Tous Droits Réservé </div >                              
+            </div>
+        </div>
+    </section>
+</body>
+</html>
